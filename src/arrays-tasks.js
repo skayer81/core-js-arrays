@@ -220,7 +220,8 @@ function getTail(arr, n) {
  *    doubleArray([]) => []
  */
 function doubleArray(arr) {
-  return [...arr, ...arr];
+  // return [...arr, ...arr];
+  return arr.concat(arr);
 }
 
 /**
