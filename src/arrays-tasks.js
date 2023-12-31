@@ -22,9 +22,8 @@
  */
 function getIntervalArray(start, end) {
   return Array.from(
-    Array(end - start + 1)
-      .fill(start)
-      .map((elem, index) => elem + index)
+    Array(end - start + 1).fill(start),
+    (elem, index) => elem + index
   );
 }
 
