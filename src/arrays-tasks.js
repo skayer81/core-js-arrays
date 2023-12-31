@@ -252,9 +252,7 @@ function toStringList(arr) {
  *   distinct([]) => []
  */
 function distinct(arr) {
-  return arr.filter((elem, index) =>
-    arr.slice(0, index).every((elem2) => elem2 !== elem)
-  );
+  return [...new Set(arr)];
 }
 
 /**
